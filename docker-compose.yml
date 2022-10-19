@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  frontend:
+    runtime: nvidia
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 8000:8000
